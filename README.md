@@ -2,6 +2,15 @@
 
 ブラウザーで文字・画像・アニメーションを作り、Wi-Fi経由でHUB75 LEDパネルに表示するプロジェクトです。ESP32-S3ファームウェア、エディター、USB設定ツール、データ形式の仕様をまとめています。
 
+## 動作デモ
+
+64×32 LEDパネル2枚の同期表示デモです。サムネイルをクリックするとYouTubeで再生できます。
+
+| 縦連結（64×64） | 横連結（128×32） |
+| --- | --- |
+| [![縦連結の同期表示デモ](https://img.youtube.com/vi/cEto-xdGJCY/hqdefault.jpg)](https://www.youtube.com/watch?v=cEto-xdGJCY) | [![横連結の同期表示デモ](https://img.youtube.com/vi/f8GNZH-R-yU/hqdefault.jpg)](https://www.youtube.com/watch?v=f8GNZH-R-yU) |
+| [動画を再生：縦連結](https://www.youtube.com/watch?v=cEto-xdGJCY) | [動画を再生：横連結](https://www.youtube.com/watch?v=f8GNZH-R-yU) |
+
 ## できること
 
 - 文字・画像・簡単な図形、スクロール・点滅・グロー点滅の編集とプレビュー。
