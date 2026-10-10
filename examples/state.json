@@ -1,0 +1,16 @@
+{
+  "revision": 12,
+  "topologyRevision": 1,
+  "topologyHash": "779730403b28639508a2e1b4c9504f4f58db79b524f973bfe768895442d5b218",
+  "packageHash": "072f9bb9c103895f5da89927314a6435af8e165928924bdba6cd556a352b921e",
+  "layoutId": "horizontal",
+  "mode": "cue",
+  "sceneId": null,
+  "cueId": "song_01",
+  "running": true,
+  "positionTicks": "0",
+  "anchorUs": "15000000",
+  "effectiveAtUs": "15000000",
+  "blackout": false,
+  "userBrightness": 26
+}

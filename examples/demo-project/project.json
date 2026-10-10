@@ -1,0 +1,291 @@
+{
+  "version": 2,
+  "projectId": "5d7a5db8-703f-4812-9324-a50e6b608071",
+  "name": "文字・ロゴと増設配置の仕様サンプル",
+  "layouts": [
+    {
+      "id": "vertical",
+      "name": "2枚・縦",
+      "width": 64,
+      "height": 64,
+      "slots": [
+        {
+          "id": "panel_1",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "panel_2",
+          "x": 0,
+          "y": 32
+        }
+      ]
+    },
+    {
+      "id": "horizontal",
+      "name": "2枚・横",
+      "width": 128,
+      "height": 32,
+      "slots": [
+        {
+          "id": "panel_1",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "panel_2",
+          "x": 64,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "id": "grid_2x2",
+      "name": "4枚・2行2列",
+      "width": 128,
+      "height": 64,
+      "slots": [
+        {
+          "id": "panel_1",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "panel_2",
+          "x": 64,
+          "y": 0
+        },
+        {
+          "id": "panel_3",
+          "x": 0,
+          "y": 32
+        },
+        {
+          "id": "panel_4",
+          "x": 64,
+          "y": 32
+        }
+      ]
+    }
+  ],
+  "defaultLayout": "horizontal",
+  "assets": [
+    {
+      "id": "logo",
+      "path": "assets/logo.png",
+      "mime": "image/png",
+      "role": "raster",
+      "width": 16,
+      "height": 16,
+      "sha256": "dfe4a41c12fc7cd8157e5dec1d08c940b32c45ffe207f7444559bcf0f2ce85eb"
+    },
+    {
+      "id": "title",
+      "path": "assets/title.png",
+      "mime": "image/png",
+      "role": "raster",
+      "width": 32,
+      "height": 16,
+      "sha256": "35ad4d1c063fc0c66f1fce027144a1c5801de96b06e171437e25af5d824055f1"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "song_title",
+      "name": "スクロール曲名",
+      "durationTicks": 180,
+      "playback": "loop",
+      "variants": {
+        "vertical": {
+          "layers": [
+            {
+              "id": "song_text",
+              "x": 64,
+              "y": 24,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 180,
+              "tracks": {
+                "x": [
+                  {
+                    "tick": 0,
+                    "value": 64,
+                    "ease": "linear"
+                  },
+                  {
+                    "tick": 180,
+                    "value": -32,
+                    "ease": "step"
+                  }
+                ]
+              },
+              "name": "曲名",
+              "kind": "text",
+              "text": "曲名",
+              "fontFamily": "sans-serif",
+              "fontSizePx": 16,
+              "fontWeight": 400,
+              "color": "#FFFFFF",
+              "align": "left",
+              "lineHeightPx": 16,
+              "letterSpacingPx": 0,
+              "boxWidth": 32,
+              "rasterAssetId": "title"
+            }
+          ]
+        },
+        "horizontal": {
+          "layers": [
+            {
+              "id": "song_text",
+              "x": 128,
+              "y": 8,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 180,
+              "tracks": {
+                "x": [
+                  {
+                    "tick": 0,
+                    "value": 128,
+                    "ease": "linear"
+                  },
+                  {
+                    "tick": 180,
+                    "value": -32,
+                    "ease": "step"
+                  }
+                ]
+              },
+              "name": "曲名",
+              "kind": "text",
+              "text": "曲名",
+              "fontFamily": "sans-serif",
+              "fontSizePx": 16,
+              "fontWeight": 400,
+              "color": "#FFFFFF",
+              "align": "left",
+              "lineHeightPx": 16,
+              "letterSpacingPx": 0,
+              "boxWidth": 32,
+              "rasterAssetId": "title"
+            }
+          ]
+        },
+        "grid_2x2": {
+          "layers": [
+            {
+              "id": "song_text",
+              "x": 128,
+              "y": 24,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 180,
+              "tracks": {
+                "x": [
+                  {
+                    "tick": 0,
+                    "value": 128,
+                    "ease": "linear"
+                  },
+                  {
+                    "tick": 180,
+                    "value": -32,
+                    "ease": "step"
+                  }
+                ]
+              },
+              "name": "曲名",
+              "kind": "text",
+              "text": "曲名",
+              "fontFamily": "sans-serif",
+              "fontSizePx": 16,
+              "fontWeight": 400,
+              "color": "#FFFFFF",
+              "align": "left",
+              "lineHeightPx": 16,
+              "letterSpacingPx": 0,
+              "boxWidth": 32,
+              "rasterAssetId": "title"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "logo_scene",
+      "name": "静止ロゴ",
+      "durationTicks": 30,
+      "playback": "hold",
+      "variants": {
+        "vertical": {
+          "layers": [
+            {
+              "id": "logo_layer",
+              "x": 24,
+              "y": 24,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 30,
+              "tracks": {},
+              "name": "ロゴ",
+              "kind": "image",
+              "assetId": "logo",
+              "originalAssetId": null
+            }
+          ]
+        },
+        "horizontal": {
+          "layers": [
+            {
+              "id": "logo_layer",
+              "x": 56,
+              "y": 8,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 30,
+              "tracks": {},
+              "name": "ロゴ",
+              "kind": "image",
+              "assetId": "logo",
+              "originalAssetId": null
+            }
+          ]
+        },
+        "grid_2x2": {
+          "layers": [
+            {
+              "id": "logo_layer",
+              "x": 56,
+              "y": 24,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 30,
+              "tracks": {},
+              "name": "ロゴ",
+              "kind": "image",
+              "assetId": "logo",
+              "originalAssetId": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "cues": [
+    {
+      "id": "song_01",
+      "name": "1曲目",
+      "sceneId": "song_title",
+      "advance": "manual",
+      "holdTicks": null
+    },
+    {
+      "id": "closing",
+      "name": "終演ロゴ",
+      "sceneId": "logo_scene",
+      "advance": "auto",
+      "holdTicks": 300
+    }
+  ]
+}

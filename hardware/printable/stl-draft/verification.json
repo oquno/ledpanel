@@ -1,0 +1,66 @@
+{
+  "units": "mm",
+  "dimensions_verified": false,
+  "parts": {
+    "carrier-left-DRAFT": {
+      "size_mm": [
+        156.0,
+        152.0,
+        5.0
+      ],
+      "watertight": true,
+      "volume_mm3": 55592.5,
+      "triangles": 3136
+    },
+    "carrier-right-DRAFT": {
+      "size_mm": [
+        156.0,
+        152.0,
+        5.0
+      ],
+      "watertight": true,
+      "volume_mm3": 83352.5,
+      "triangles": 4808
+    },
+    "split-splice-DRAFT": {
+      "size_mm": [
+        64.0,
+        20.0,
+        6.0
+      ],
+      "watertight": true,
+      "volume_mm3": 6864.9,
+      "triangles": 1172
+    },
+    "panel-link-DRAFT": {
+      "size_mm": [
+        52.0,
+        20.0,
+        6.0
+      ],
+      "watertight": true,
+      "volume_mm3": 5424.9,
+      "triangles": 1172
+    },
+    "board-spacer-DRAFT": {
+      "size_mm": [
+        8.0,
+        8.0,
+        10.0
+      ],
+      "watertight": true,
+      "volume_mm3": 436.3,
+      "triangles": 768
+    },
+    "panel-spacer-DRAFT": {
+      "size_mm": [
+        10.0,
+        10.0,
+        8.0
+      ],
+      "watertight": true,
+      "volume_mm3": 555.3,
+      "triangles": 768
+    }
+  }
+}

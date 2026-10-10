@@ -1,0 +1,14 @@
+{
+  "minimal.lpk": {
+    "bytes": 1104,
+    "sha256": "e89f41d41e3e8033c139d38b8d99edbe77a95b9e714087cb817542008dc9d976"
+  },
+  "demo.lpk": {
+    "bytes": 4794,
+    "sha256": "072f9bb9c103895f5da89927314a6435af8e165928924bdba6cd556a352b921e"
+  },
+  "demo.ledproj": {
+    "bytes": 1804,
+    "sha256": "bb169a7d625579a9c21fb0859250ab2620986b78228234f8a312683dff04806b"
+  }
+}

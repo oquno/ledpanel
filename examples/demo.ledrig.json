@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "groupId": "cc27b4ea-bcb1-4e15-8d6f-01e4da8b371b",
+  "masterNodeId": 7,
+  "revision": 1,
+  "nodes": [
+    {
+      "nodeId": 7,
+      "hardwareId": "00000000-0000-4000-8000-000000000007",
+      "label": "Node 7",
+      "role": "master",
+      "enabled": true,
+      "boardProfile": "seengreat_hub75_s3_n16r8_v1",
+      "rotation": 0,
+      "brightnessCap": 64
+    },
+    {
+      "nodeId": 12,
+      "hardwareId": "00000000-0000-4000-8000-00000000000c",
+      "label": "Node 12",
+      "role": "follower",
+      "enabled": true,
+      "boardProfile": "seengreat_hub75_s3_n16r8_v1",
+      "rotation": 0,
+      "brightnessCap": 64
+    },
+    {
+      "nodeId": 42,
+      "hardwareId": "00000000-0000-4000-8000-00000000002a",
+      "label": "Node 42",
+      "role": "follower",
+      "enabled": true,
+      "boardProfile": "seengreat_hub75_s3_n16r8_v1",
+      "rotation": 0,
+      "brightnessCap": 64
+    },
+    {
+      "nodeId": 100,
+      "hardwareId": "00000000-0000-4000-8000-000000000064",
+      "label": "Node 100",
+      "role": "follower",
+      "enabled": true,
+      "boardProfile": "seengreat_hub75_s3_n16r8_v1",
+      "rotation": 0,
+      "brightnessCap": 64
+    }
+  ],
+  "layouts": [
+    {
+      "layoutId": "vertical",
+      "bindings": [
+        {
+          "slotId": "panel_1",
+          "nodeId": 7
+        },
+        {
+          "slotId": "panel_2",
+          "nodeId": 12
+        }
+      ]
+    },
+    {
+      "layoutId": "horizontal",
+      "bindings": [
+        {
+          "slotId": "panel_1",
+          "nodeId": 7
+        },
+        {
+          "slotId": "panel_2",
+          "nodeId": 12
+        }
+      ]
+    },
+    {
+      "layoutId": "grid_2x2",
+      "bindings": [
+        {
+          "slotId": "panel_1",
+          "nodeId": 7
+        },
+        {
+          "slotId": "panel_2",
+          "nodeId": 12
+        },
+        {
+          "slotId": "panel_3",
+          "nodeId": 42
+        },
+        {
+          "slotId": "panel_4",
+          "nodeId": 100
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "version": 2,
+  "projectId": "5d7a5db8-703f-4812-9324-a50e6b608071",
+  "layouts": [
+    {
+      "id": "vertical",
+      "name": "2枚・縦",
+      "width": 64,
+      "height": 64,
+      "slots": [
+        {
+          "id": "panel_1",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "panel_2",
+          "x": 0,
+          "y": 32
+        }
+      ]
+    },
+    {
+      "id": "horizontal",
+      "name": "2枚・横",
+      "width": 128,
+      "height": 32,
+      "slots": [
+        {
+          "id": "panel_1",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "panel_2",
+          "x": 64,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "id": "grid_2x2",
+      "name": "4枚・2行2列",
+      "width": 128,
+      "height": 64,
+      "slots": [
+        {
+          "id": "panel_1",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "panel_2",
+          "x": 64,
+          "y": 0
+        },
+        {
+          "id": "panel_3",
+          "x": 0,
+          "y": 32
+        },
+        {
+          "id": "panel_4",
+          "x": 64,
+          "y": 32
+        }
+      ]
+    }
+  ],
+  "defaultLayout": "horizontal",
+  "assets": [
+    {
+      "id": "logo",
+      "width": 16,
+      "height": 16,
+      "offset": 0,
+      "length": 768,
+      "sha256": "d6b0e5a2d459fceb3688a20b9dbee01131d5556a4f37d6cacabc95a4302a333d"
+    },
+    {
+      "id": "title",
+      "width": 32,
+      "height": 16,
+      "offset": 768,
+      "length": 1536,
+      "sha256": "3cca703f2877010b60d232919a85a23db2a1063a81420db1bee3fc062796bd06"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "song_title",
+      "name": "スクロール曲名",
+      "durationTicks": 180,
+      "playback": "loop",
+      "variants": {
+        "vertical": {
+          "layers": [
+            {
+              "id": "song_text",
+              "x": 64,
+              "y": 24,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 180,
+              "tracks": {
+                "x": [
+                  {
+                    "tick": 0,
+                    "value": 64,
+                    "ease": "linear"
+                  },
+                  {
+                    "tick": 180,
+                    "value": -32,
+                    "ease": "step"
+                  }
+                ]
+              },
+              "kind": "sprite",
+              "assetId": "title"
+            }
+          ]
+        },
+        "horizontal": {
+          "layers": [
+            {
+              "id": "song_text",
+              "x": 128,
+              "y": 8,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 180,
+              "tracks": {
+                "x": [
+                  {
+                    "tick": 0,
+                    "value": 128,
+                    "ease": "linear"
+                  },
+                  {
+                    "tick": 180,
+                    "value": -32,
+                    "ease": "step"
+                  }
+                ]
+              },
+              "kind": "sprite",
+              "assetId": "title"
+            }
+          ]
+        },
+        "grid_2x2": {
+          "layers": [
+            {
+              "id": "song_text",
+              "x": 128,
+              "y": 24,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 180,
+              "tracks": {
+                "x": [
+                  {
+                    "tick": 0,
+                    "value": 128,
+                    "ease": "linear"
+                  },
+                  {
+                    "tick": 180,
+                    "value": -32,
+                    "ease": "step"
+                  }
+                ]
+              },
+              "kind": "sprite",
+              "assetId": "title"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "logo_scene",
+      "name": "静止ロゴ",
+      "durationTicks": 30,
+      "playback": "hold",
+      "variants": {
+        "vertical": {
+          "layers": [
+            {
+              "id": "logo_layer",
+              "x": 24,
+              "y": 24,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 30,
+              "tracks": {},
+              "kind": "sprite",
+              "assetId": "logo"
+            }
+          ]
+        },
+        "horizontal": {
+          "layers": [
+            {
+              "id": "logo_layer",
+              "x": 56,
+              "y": 8,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 30,
+              "tracks": {},
+              "kind": "sprite",
+              "assetId": "logo"
+            }
+          ]
+        },
+        "grid_2x2": {
+          "layers": [
+            {
+              "id": "logo_layer",
+              "x": 56,
+              "y": 24,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 30,
+              "tracks": {},
+              "kind": "sprite",
+              "assetId": "logo"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "cues": [
+    {
+      "id": "song_01",
+      "name": "1曲目",
+      "sceneId": "song_title",
+      "advance": "manual",
+      "holdTicks": null
+    },
+    {
+      "id": "closing",
+      "name": "終演ロゴ",
+      "sceneId": "logo_scene",
+      "advance": "auto",
+      "holdTicks": 300
+    }
+  ],
+  "runtimeMinor": 0,
+  "renderer": "lp-raster-1",
+  "fps": 30
+}

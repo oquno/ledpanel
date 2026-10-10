@@ -1,0 +1,43 @@
+tmp/
+node_modules/
+*.private.json
+*.log
+provisioning-secrets/
+__pycache__/
+*.pyc
+
+# Generated delivery archives and firmware builds
+output/
+firmware/build/
+firmware/sdkconfig
+firmware/sdkconfig.old
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local tools, IDE metadata and Python environments
+.venv/
+venv/
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ESP-IDF generated dependencies and alternate build directories
+firmware/managed_components/
+build/
+build-*/
+
+# Device dumps and local archives (public reference .lpk/.ledproj stay tracked)
+device-backups/
+*.bin
+*.elf
+*.map
+*.zip

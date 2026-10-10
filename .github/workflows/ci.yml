@@ -1,0 +1,20 @@
+name: Source checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python tests
+        run: python -m unittest discover -s tests -p "test_*.py"
+      - name: Browser tests (installed Edge)
+        run: python tools/test_browser.py
+      - name: Reference packages
+        run: python tools/validate_examples.py
+      - name: Publication audit
+        run: python tools/check_publication.py

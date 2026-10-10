@@ -1,0 +1,19 @@
+{
+  "dimensions_verified": false,
+  "panel_width": 320,
+  "panel_height": 160,
+  "panel_hole_pitch_x": 280,
+  "panel_hole_pitch_y": 120,
+  "panel_clearance_diameter": 3.4,
+  "frame_inset": 4,
+  "rail_width": 24,
+  "frame_thickness": 5,
+  "joining_clearance_diameter": 4.5,
+  "board_hole_pitch_x": 56,
+  "board_hole_pitch_y": 46,
+  "board_clearance_diameter": 2.9,
+  "board_slot_travel": 6,
+  "board_spacer_height": 10,
+  "panel_spacer_height": 8,
+  "panel_gap": 0
+}

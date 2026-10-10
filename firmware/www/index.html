@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LED PANEL LIVE</title>
+  <link rel="stylesheet" href="/portal.css">
+</head>
+<body>
+  <header class="top">
+    <div><b>LED PANEL LIVE</b><span id="connectionText">接続確認中</span></div>
+    <button id="blackout" class="danger">消灯</button>
+  </header>
+  <nav class="tabs">
+    <button id="tabLogin" class="active">ログイン</button>
+    <button id="logout" hidden>ログアウト</button>
+  </nav>
+  <main>
+    <section id="login" class="page">
+      <h1>LED PANEL LIVE</h1>
+      <p class="muted">保存した管理パスワードでログインしてください。</p>
+      <form id="loginForm" method="post" action="/api/v2/auth/login">
+        <label>管理パスワード<input id="password" type="password" autocomplete="current-password" required minlength="12" maxlength="128"></label>
+        <button class="primary" type="submit" disabled>準備中…</button>
+      </form>
+      <p id="loginError" role="status">ログインを準備しています…</p>
+    </section>
+    <section id="setup" class="page" hidden>
+      <h1>初回設定</h1>
+      <p>PCからUSBシリアルを開き、基板のBOOTボタンを3秒押し続けてください。専用設定窓口が60秒間開きます。</p>
+      <p class="muted">COMポートをほかのソフトが使用中の場合は閉じてから tools/provision.py configure を実行してください。</p>
+      <pre id="setupStatus">まだ設定されていません</pre>
+    </section>
+    <section id="status" class="page" hidden>
+      <h1>実機の状態</h1>
+      <div id="deviceState" class="card">読み込み中</div>
+      <div class="button-row">
+        <a id="editorLink" class="primary button" href="/editor">デザインを開く</a>
+        <button id="refresh">更新</button>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/login.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LEDPANEL State 2.0",
+  "type": "object",
+  "properties": {
+    "revision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "topologyRevision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "topologyHash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "packageHash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "layoutId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,31}$"
+    },
+    "mode": {
+      "enum": [
+        "stopped",
+        "scene",
+        "cue"
+      ]
+    },
+    "sceneId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_-]{0,31}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cueId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_-]{0,31}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "running": {
+      "type": "boolean"
+    },
+    "positionTicks": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]{0,19})$",
+      "description": "Decimal uint64; also enforce <=18446744073709551615 in semantic validation."
+    },
+    "anchorUs": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]{0,19})$",
+      "description": "Decimal uint64; also enforce <=18446744073709551615 in semantic validation."
+    },
+    "effectiveAtUs": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]{0,19})$",
+      "description": "Decimal uint64; also enforce <=18446744073709551615 in semantic validation."
+    },
+    "blackout": {
+      "type": "boolean"
+    },
+    "userBrightness": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 255
+    }
+  },
+  "required": [
+    "revision",
+    "topologyRevision",
+    "topologyHash",
+    "packageHash",
+    "layoutId",
+    "mode",
+    "sceneId",
+    "cueId",
+    "running",
+    "positionTicks",
+    "anchorUs",
+    "effectiveAtUs",
+    "blackout",
+    "userBrightness"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "stopped"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sceneId": {
+            "type": "null"
+          },
+          "cueId": {
+            "type": "null"
+          },
+          "running": {
+            "const": false
+          },
+          "positionTicks": {
+            "const": "0"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "scene"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sceneId": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,31}$"
+          },
+          "cueId": {
+            "type": "null"
+          },
+          "packageHash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "cue"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sceneId": {
+            "type": "null"
+          },
+          "cueId": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,31}$"
+          },
+          "packageHash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    }
+  ]
+}

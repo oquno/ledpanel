@@ -1,0 +1,2 @@
+#include "node_state.hpp"
+namespace ledpanel { bool state_can_render(const NodeConfig& c,const PlaybackState& s,std::string& reason){if(!c.provisioned){reason="UNPROVISIONED";return false;}if(s.blackout){reason="BLACKOUT";return false;}if(s.packageHash.empty()){reason="NO_PACKAGE";return false;}if(s.topologyHash!=c.topologyHash){reason="TOPOLOGY_MISMATCH";return false;}if(s.mode=="stopped"||!s.running){reason="STOPPED";return false;}return true;} }

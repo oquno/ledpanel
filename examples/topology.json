@@ -1,0 +1,47 @@
+{
+  "groupId": "cc27b4ea-bcb1-4e15-8d6f-01e4da8b371b",
+  "masterNodeId": 7,
+  "topologyRevision": 1,
+  "layout": {
+    "id": "horizontal",
+    "name": "2枚・横",
+    "width": 128,
+    "height": 32,
+    "slots": [
+      {
+        "id": "panel_1",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "id": "panel_2",
+        "x": 64,
+        "y": 0
+      }
+    ]
+  },
+  "members": [
+    {
+      "nodeId": 7,
+      "hardwareId": "00000000-0000-4000-8000-000000000007",
+      "label": "Node 7",
+      "role": "master",
+      "enabled": true,
+      "boardProfile": "seengreat_hub75_s3_n16r8_v1",
+      "rotation": 0,
+      "brightnessCap": 64,
+      "slotId": "panel_1"
+    },
+    {
+      "nodeId": 12,
+      "hardwareId": "00000000-0000-4000-8000-00000000000c",
+      "label": "Node 12",
+      "role": "follower",
+      "enabled": true,
+      "boardProfile": "seengreat_hub75_s3_n16r8_v1",
+      "rotation": 0,
+      "brightnessCap": 64,
+      "slotId": "panel_2"
+    }
+  ]
+}

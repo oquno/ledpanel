@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "runtimeMinor": 0,
+  "renderer": "lp-raster-1",
+  "fps": 30,
+  "projectId": "00000000-0000-4000-8000-000000000001",
+  "layouts": [
+    {
+      "id": "vertical",
+      "name": "2枚・縦",
+      "width": 64,
+      "height": 64,
+      "slots": [
+        {
+          "id": "panel_1",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "panel_2",
+          "x": 0,
+          "y": 32
+        }
+      ]
+    },
+    {
+      "id": "horizontal",
+      "name": "2枚・横",
+      "width": 128,
+      "height": 32,
+      "slots": [
+        {
+          "id": "panel_1",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": "panel_2",
+          "x": 64,
+          "y": 0
+        }
+      ]
+    }
+  ],
+  "defaultLayout": "horizontal",
+  "assets": [
+    {
+      "id": "red",
+      "width": 1,
+      "height": 1,
+      "offset": 0,
+      "length": 3,
+      "sha256": "fb619cb1bbb2094bec5eef91f5b42be5cfaa5f67549403ec3062a041b87a1ff6"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "test",
+      "name": "赤い1画素",
+      "durationTicks": 30,
+      "playback": "hold",
+      "variants": {
+        "vertical": {
+          "layers": [
+            {
+              "id": "pixel",
+              "x": 0,
+              "y": 0,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 30,
+              "tracks": {},
+              "kind": "sprite",
+              "assetId": "red"
+            }
+          ]
+        },
+        "horizontal": {
+          "layers": [
+            {
+              "id": "pixel",
+              "x": 0,
+              "y": 0,
+              "opacity": 255,
+              "startTick": 0,
+              "endTick": 30,
+              "tracks": {},
+              "kind": "sprite",
+              "assetId": "red"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "cues": [
+    {
+      "id": "test_cue",
+      "name": "赤い1画素",
+      "sceneId": "test",
+      "advance": "manual",
+      "holdTicks": null
+    }
+  ]
+}

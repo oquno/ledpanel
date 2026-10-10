@@ -1,0 +1,846 @@
+{
+  "formatVersion": 1,
+  "includesGitHistory": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 109,
+      "sha256": "b23d5d576f16718b1b4b1f588cd2ec63343fb608ec01d2fef1332bccbc01be74"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 586,
+      "sha256": "003d0a232dcffa8269619cafa1f78bd767f8ec77776a6e76fff1ee529e69b26d"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 640,
+      "sha256": "57e016100589a89cfea637f8baccc69c042eafc4e6d9be1cd7f0c10950cc7be4"
+    },
+    {
+      "path": "ApplyFirmware.ps1",
+      "bytes": 928,
+      "sha256": "b34ee6f74db92f536d6f811d256758d92367ffd8be41ff5fad463d8e6d5935b9"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1235,
+      "sha256": "5201ce2214c238a7299e6ea5a917495c868ef58eb08af7a26075f607be214476"
+    },
+    {
+      "path": "IMPLEMENTATION_HANDOFF.md",
+      "bytes": 688,
+      "sha256": "a6a16b7a8d29b6e07361f236f7d3bdf4ab6e86eb7053c5ca9196b7b1d6e0581f"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1086,
+      "sha256": "3f7ee44288bea8063154fb15d2e3d501f5c8bc3cb5d03967baa6065f0514cfa8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3820,
+      "sha256": "ee29c5c04553d4b6f1a7814378180d36431c72e493983b80dd5653f6665e06f7"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1469,
+      "sha256": "0bd3ef85ad36a05ee22a45b7d87709548d8b5feb343ad8f1cfff603556559eb8"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 3501,
+      "sha256": "4c4d886717b9241ba5a8d93c4db3a7aad8012479f450ade5e7de03f1835d3dae"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 931,
+      "sha256": "691469e5c64b926b47b0354d7e2186dfc636b14a63e20d1249050cefdd0d8ad4"
+    },
+    {
+      "path": "apps/editor/animation.mjs",
+      "bytes": 4487,
+      "sha256": "48b86224e7c5af7c3c9a614c35612abb182264ab79c1cdef5a0beab0928644d3"
+    },
+    {
+      "path": "apps/editor/app.js",
+      "bytes": 61008,
+      "sha256": "5142bcdda65ec22d9759c4e84d1b6439617e2d5338fde21dcda7d677fbf3a56c"
+    },
+    {
+      "path": "apps/editor/deployment.mjs",
+      "bytes": 4608,
+      "sha256": "0bb6a089b0484b3533fdb05dda13c1bf562fd79a7236ba0c6d2c10718159cf64"
+    },
+    {
+      "path": "apps/editor/index.html",
+      "bytes": 9255,
+      "sha256": "90343a57d8bb34c469d135be1295ac317521113068802aad5d9d8d2eb998bb4c"
+    },
+    {
+      "path": "apps/editor/media.mjs",
+      "bytes": 4998,
+      "sha256": "dc026dd1b82ad1d650aba07e53b25e390ef7418d1d5aa66109789e809c6b8903"
+    },
+    {
+      "path": "apps/editor/style.css",
+      "bytes": 9746,
+      "sha256": "ab825dcfa993121c324e1a36a8f0b89f8608ffde38ee36b646cfcc719a579686"
+    },
+    {
+      "path": "docs/01-requirements.md",
+      "bytes": 8760,
+      "sha256": "ea9dd242e1c59f4b136f8f1f8d9752c36dc8305d50030954ba4b28ecbbdbb551"
+    },
+    {
+      "path": "docs/02-data-format.md",
+      "bytes": 17613,
+      "sha256": "bc2ddcd823c391945a99152e4b88af6eecd38ce0c9a20eb47ed9f282c9d201c0"
+    },
+    {
+      "path": "docs/03-firmware.md",
+      "bytes": 16782,
+      "sha256": "a208c90e14a24e43d2dc6b6be902a9b24b365c4f0433d8e0904224afb2cc9612"
+    },
+    {
+      "path": "docs/04-protocol-api.md",
+      "bytes": 28159,
+      "sha256": "f6d4581aa47c3c360a9e424a6fa445b3a3ff2736ec6f7b70094ec4bc4301237f"
+    },
+    {
+      "path": "docs/05-web-ui.md",
+      "bytes": 14102,
+      "sha256": "8289e77f934ed97a9a0fb2cbc0879abca309835754729d0c507c9fb3efed71f4"
+    },
+    {
+      "path": "docs/06-verification.md",
+      "bytes": 10383,
+      "sha256": "1c551e9278a4c12881a491696724ee1190eb6c913069e7b1acc4742afa163ff5"
+    },
+    {
+      "path": "docs/07-sources.md",
+      "bytes": 4827,
+      "sha256": "ec15444da69a237a761e6fb59dca2cb3f788ca4b269c58e48d3fe0dd5dca9db8"
+    },
+    {
+      "path": "docs/08-scalability.md",
+      "bytes": 16832,
+      "sha256": "3d9cbdac38423871de6e48c33116b68013f511d3ea6e72fc92327a82030d20b1"
+    },
+    {
+      "path": "docs/09-technology-selection.md",
+      "bytes": 4990,
+      "sha256": "9d4de16a6b9455d158a0e806db30c95b925d23792ca22b059812ee4df3ecd560"
+    },
+    {
+      "path": "docs/COMPLETE_SPEC.md",
+      "bytes": 224849,
+      "sha256": "8b2976faace09a9b13efcb7b6901a21bb371fb9648b1ebac0d74d56bd14b0344"
+    },
+    {
+      "path": "docs/EDITOR_GUIDE.md",
+      "bytes": 11879,
+      "sha256": "3254766fc58aa4239645e2ce476668d1c55eb45dbac7937448ea51d3280ab42c"
+    },
+    {
+      "path": "docs/HARDWARE_MOUNTING.md",
+      "bytes": 7164,
+      "sha256": "1cc76cb80f6030626a3c0832e8f1538636eb456a583b4f33e8e066ae2f5fa7e3"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_STATUS.md",
+      "bytes": 1943,
+      "sha256": "2a6d8588d886bd8a6a0910f72b170753047f4b4276d47bafe853f9e65bdf38d4"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "bytes": 1928,
+      "sha256": "4e1d5e401b8faafc3029b69b012de9b5c905870ecb65434346318f96178073df"
+    },
+    {
+      "path": "docs/TWO_PANELS.md",
+      "bytes": 2123,
+      "sha256": "7aa1f1d9c4f5264840ce4a1d9799f1b02748a189d0b7cb42b481949d60c41a63"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 3533,
+      "sha256": "c239e3cf7834d188b0d360d0a00d3d76e502d0bbc550e9eaca093c2f1c346b40"
+    },
+    {
+      "path": "examples/README.md",
+      "bytes": 2842,
+      "sha256": "9dfae4e275d97d0c25fed4838bd055d44d23f5d9ee68875e3f0c2b3f8a8acb32"
+    },
+    {
+      "path": "examples/checksums.json",
+      "bytes": 387,
+      "sha256": "19453bb9ff09ea43ea480d76aeed040240461b505f3cc4e8649cb1e6f6023269"
+    },
+    {
+      "path": "examples/command.json",
+      "bytes": 146,
+      "sha256": "156c90e6bc98805ca2cf1ec15fe588224d62b7058ef7331cfe5afa385a508385"
+    },
+    {
+      "path": "examples/demo-project/assets/logo.png",
+      "bytes": 137,
+      "sha256": "dfe4a41c12fc7cd8157e5dec1d08c940b32c45ffe207f7444559bcf0f2ce85eb"
+    },
+    {
+      "path": "examples/demo-project/assets/title.png",
+      "bytes": 200,
+      "sha256": "35ad4d1c063fc0c66f1fce027144a1c5801de96b06e171437e25af5d824055f1"
+    },
+    {
+      "path": "examples/demo-project/project.json",
+      "bytes": 7068,
+      "sha256": "b4e8a23298130b81e1a9a7834b3ad9ef0114df0862e160e2d63de1c7d13d7c02"
+    },
+    {
+      "path": "examples/demo.ledproj",
+      "bytes": 1804,
+      "sha256": "bb169a7d625579a9c21fb0859250ab2620986b78228234f8a312683dff04806b"
+    },
+    {
+      "path": "examples/demo.ledrig.json",
+      "bytes": 2123,
+      "sha256": "58820fc3b4435a72940bd5c3e19a3be726662011e458975c6a7b56e96b32e390"
+    },
+    {
+      "path": "examples/demo.lpk",
+      "bytes": 4794,
+      "sha256": "072f9bb9c103895f5da89927314a6435af8e165928924bdba6cd556a352b921e"
+    },
+    {
+      "path": "examples/demo.runtime.json",
+      "bytes": 5714,
+      "sha256": "99962791605110b1634308dc157a305e944e77d64553abc12b3b11764c13112b"
+    },
+    {
+      "path": "examples/minimal.lpk",
+      "bytes": 1104,
+      "sha256": "e89f41d41e3e8033c139d38b8d99edbe77a95b9e714087cb817542008dc9d976"
+    },
+    {
+      "path": "examples/minimal.runtime.json",
+      "bytes": 2115,
+      "sha256": "83af04ffdc630c15c07a08a1fd2a5ed0815178bef2d90eb292c77b43e4959ae5"
+    },
+    {
+      "path": "examples/state.json",
+      "bytes": 464,
+      "sha256": "974aca622c8773b4e12416661a06ce29b34341c473a316bf2b10a54d1bb89f47"
+    },
+    {
+      "path": "examples/topology.json",
+      "bytes": 1026,
+      "sha256": "63d18ce3be3cd80a5a5cf7b2e4107ab179b2c2b3d1f194adf73a3a532c87a773"
+    },
+    {
+      "path": "examples/udp-test-vector.json",
+      "bytes": 676,
+      "sha256": "07352f31ca207def8a469e99aa03c697de10941bd526be0b59887390c163fdb6"
+    },
+    {
+      "path": "firmware/CMakeLists.txt",
+      "bytes": 179,
+      "sha256": "9168f125154113f4a8b28c2d7a8472c874a5ad80bb596091dfffb7beef8ab8b4"
+    },
+    {
+      "path": "firmware/README.md",
+      "bytes": 2752,
+      "sha256": "4d6ff4c99408fee5f8d844eeed12732376dd27649e03780bad3f284949f85f11"
+    },
+    {
+      "path": "firmware/components/hub75/CMakeLists.txt",
+      "bytes": 5591,
+      "sha256": "9699c57f25ffe93fe16b22e1e6069cead7569884aee533dfd074b21aadddf609"
+    },
+    {
+      "path": "firmware/components/hub75/Kconfig",
+      "bytes": 31145,
+      "sha256": "e034831b2cc2845f3c52bc9149ea8b5b2e7c7ed57d4e468c402a29784d633787"
+    },
+    {
+      "path": "firmware/components/hub75/LICENSE",
+      "bytes": 1100,
+      "sha256": "df247d229ceba5291a24e6d6db2fbc1cfd883e3baae0b58c9b2aa8e95d97c194"
+    },
+    {
+      "path": "firmware/components/hub75/README.md",
+      "bytes": 12419,
+      "sha256": "76935e4c48eed87585d115ec71a661152f7eca3710c25182f6ee1ebd323994b8"
+    },
+    {
+      "path": "firmware/components/hub75/UPSTREAM.md",
+      "bytes": 358,
+      "sha256": "67127dde817c62c60d4b5036e6800625cbfd784c565c24ab30c51b1326709c9e"
+    },
+    {
+      "path": "firmware/components/hub75/idf_component.yml",
+      "bytes": 1334,
+      "sha256": "beac50fd32d0adb550774f1adc349c9b829e746c51619cdfa3a37eeb1fb526bf"
+    },
+    {
+      "path": "firmware/components/hub75/include/hub75.h",
+      "bytes": 7638,
+      "sha256": "114c5a0356139dd0fb2ec790310849834f2a927fa77c241f9227a333814269ad"
+    },
+    {
+      "path": "firmware/components/hub75/include/hub75_config.h",
+      "bytes": 2982,
+      "sha256": "719a0dfc24e4f99f3f7327b2038617f7527344b7737ed9b69ffccc755779220b"
+    },
+    {
+      "path": "firmware/components/hub75/include/hub75_internal.h",
+      "bytes": 761,
+      "sha256": "faadc84f928df1e377b47d7a0dbe92d62b17cf4bc17a5dfa5453ba9bb0e17bf5"
+    },
+    {
+      "path": "firmware/components/hub75/include/hub75_types.h",
+      "bytes": 9056,
+      "sha256": "bbcb34a933774cd39429cd386b8973110fe717f11509ab79f32338e0cd98e73c"
+    },
+    {
+      "path": "firmware/components/hub75/src/color/color_convert.cpp",
+      "bytes": 269,
+      "sha256": "efc8505c1723d89049c2e48225eff6243c9895590cd4b963db181dbd5eee4d90"
+    },
+    {
+      "path": "firmware/components/hub75/src/color/color_convert.h",
+      "bytes": 4735,
+      "sha256": "66d6735d82d9240c3e32f46ea1f66c206aaa6ee6afc3ebf6ddeb2ff3a8d31916"
+    },
+    {
+      "path": "firmware/components/hub75/src/color/color_lut.cpp",
+      "bytes": 2629,
+      "sha256": "b68868294dd7a9933ec4405b7241aa1a7e2344a5a4aa2deddfb1e9a3fcacd625"
+    },
+    {
+      "path": "firmware/components/hub75/src/color/color_lut.h",
+      "bytes": 7977,
+      "sha256": "e78c50604c893372ef3b09fc58fc1a4e49eca25ccb3411f8bd2951c563af4e13"
+    },
+    {
+      "path": "firmware/components/hub75/src/core/hub75_driver.cpp",
+      "bytes": 7678,
+      "sha256": "c64939bc785a89f912b78ee74a6be0d955fe899d7f3d90d17be4cf89cfa84ade"
+    },
+    {
+      "path": "firmware/components/hub75/src/drivers/dp3246.cpp",
+      "bytes": 4903,
+      "sha256": "1a6a49e63e6211c062be50caa0235addabce95a3e26e6d106cd43d3949ec0847"
+    },
+    {
+      "path": "firmware/components/hub75/src/drivers/driver_init.h",
+      "bytes": 768,
+      "sha256": "e990f2365eeb5d5596046773d85242bd0bf56ab06fd3c3bd1ecb3fe8d568b2e5"
+    },
+    {
+      "path": "firmware/components/hub75/src/drivers/fm6126a.cpp",
+      "bytes": 4155,
+      "sha256": "8d31da19a53dcf31bc9d2491b1a5dbd6c21459e317e575882d2c42ec739a6374"
+    },
+    {
+      "path": "firmware/components/hub75/src/panels/panel_layout.h",
+      "bytes": 21769,
+      "sha256": "873ebc4923f428e1d18dd4e74a2036d56960d4c56e253ece8108edc29fbc4c5a"
+    },
+    {
+      "path": "firmware/components/hub75/src/panels/rotation.h",
+      "bytes": 3365,
+      "sha256": "c0c08f92e581508ce249fd6fff3be822be102b4b530a9d359b24b8cf2b91476e"
+    },
+    {
+      "path": "firmware/components/hub75/src/panels/scan_patterns.h",
+      "bytes": 13416,
+      "sha256": "9046684a82c09bfc9c08ac2c008ecd92aa1b17aa9efb1c0fac65a909c7622767"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/gdma/gdma_dma.cpp",
+      "bytes": 56280,
+      "sha256": "3f2d3fb9d8de8244c03bdf70dc3999ffcb1072eccbece7a034fc57157d3834c8"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/gdma/gdma_dma.h",
+      "bytes": 6408,
+      "sha256": "c0989e55f6fb193ea9fcc60f83af959fa46127ff22f4557569d9051a9ed7f524"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/i2s/i2s_dma.cpp",
+      "bytes": 50497,
+      "sha256": "554a1079b3bea5845ce58c7ddf2ee491df17ea8e076f7a44f2d3f88a5363fea3"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/i2s/i2s_dma.h",
+      "bytes": 6202,
+      "sha256": "ccff1971b7db7c46b016939502720585d6b7fc5eed53370d5a8cc6893752ab05"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/parlio/parlio_dma.cpp",
+      "bytes": 43418,
+      "sha256": "2393c32668f55d27818eb955b1382495055172e75b4c8cbbb62f6024fa947d90"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/parlio/parlio_dma.h",
+      "bytes": 4626,
+      "sha256": "48a8a3b695fa71c31c7800fcb0cc6c5c833244b3ff6bec4e5316cfaf5ff1b75d"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/platform_detect.cpp",
+      "bytes": 337,
+      "sha256": "f12f8e796a58eb40ecf0881b9846f017c7f86bc7a9e508a4555c63592aa5cd02"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/platform_detect.h",
+      "bytes": 1883,
+      "sha256": "7b5458b6e8f7272543cfce895e8148cddec2caf089bed53787272902ceec3329"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/platform_dma.cpp",
+      "bytes": 2901,
+      "sha256": "9f25b2c0d1fe8d25baec24bce4232dcd7578b056ddefd6e86a17b2bc6359484d"
+    },
+    {
+      "path": "firmware/components/hub75/src/platforms/platform_dma.h",
+      "bytes": 10142,
+      "sha256": "feb3912cf2a1bb97e9264fae2ae317c2165fc331a4337e3296dde87ccffb9893"
+    },
+    {
+      "path": "firmware/components/hub75/src/util/drawing_profiler.h",
+      "bytes": 4120,
+      "sha256": "ea41b986b872c3b0bd715dcc07e22eb6a7c875b3c55fb584ad00db90b7594fd8"
+    },
+    {
+      "path": "firmware/dependencies.lock",
+      "bytes": 216,
+      "sha256": "0725a0e7776f33a23e42a542ea6582e25172ef2a0eaa93b0197a46ac1930011d"
+    },
+    {
+      "path": "firmware/main/CMakeLists.txt",
+      "bytes": 1725,
+      "sha256": "3ac6fcaf5020fb2696d0d5c5703b4e66179a949ded68d1c66e0e64b8395853a1"
+    },
+    {
+      "path": "firmware/main/config_store.cpp",
+      "bytes": 16098,
+      "sha256": "fa877e988723b870e18218d7dce4fed02b0634b8fb5a3f8f84eb2e36efd30c98"
+    },
+    {
+      "path": "firmware/main/config_store.hpp",
+      "bytes": 470,
+      "sha256": "a975069e3e18a647033808f6a8243dab259d12eba0249f0e7b305780fb4d04b1"
+    },
+    {
+      "path": "firmware/main/content_store.cpp",
+      "bytes": 12666,
+      "sha256": "2856057d0e59c9256948aa58352f6335da9a2a74887a603c19fa529aa7bd523b"
+    },
+    {
+      "path": "firmware/main/content_store.hpp",
+      "bytes": 1117,
+      "sha256": "8ba5e560e58583523fd6ff12dcc7221ec2fd560507352fd0ed0433c606b939eb"
+    },
+    {
+      "path": "firmware/main/frame_clock.hpp",
+      "bytes": 1086,
+      "sha256": "8642b6e4a9213d74a5b84d9ed914107a8beb30ac8c4d811d96fef61e85c2193e"
+    },
+    {
+      "path": "firmware/main/hub75_hal.cpp",
+      "bytes": 10354,
+      "sha256": "f6720e0f540a0609425a3456a995592a91471dde206af36df3ba257a6c2176d4"
+    },
+    {
+      "path": "firmware/main/hub75_hal.hpp",
+      "bytes": 481,
+      "sha256": "c43a5bd9ae45174a28261c071cf4d6b482d5fdd5bd73d74285a45792e8b8569f"
+    },
+    {
+      "path": "firmware/main/lpk_decoder.cpp",
+      "bytes": 1605,
+      "sha256": "a6a92e80cf42b5083c5ff3b634339adf9f43200344bef396440d111ba4e8623b"
+    },
+    {
+      "path": "firmware/main/lpk_decoder.hpp",
+      "bytes": 470,
+      "sha256": "dbfe01005c24752543fcc0a5209b09b80843d523f4b2ca277f1cc89e2dbde6f7"
+    },
+    {
+      "path": "firmware/main/main.cpp",
+      "bytes": 20853,
+      "sha256": "4244521cc4807561c92f1ce0756a020790ee0444f8561204aed959dc18062134"
+    },
+    {
+      "path": "firmware/main/network_diagnostics.hpp",
+      "bytes": 135,
+      "sha256": "123e445128beff1b9ad83a9a64db3bf34bba2665a4bdbc16ffd77bf3d62cbe8c"
+    },
+    {
+      "path": "firmware/main/node_distribution.cpp",
+      "bytes": 4165,
+      "sha256": "d248250c9256bc3dbb772aa0de866fde0600fa6f6873340670403538bae315a3"
+    },
+    {
+      "path": "firmware/main/node_distribution.hpp",
+      "bytes": 141,
+      "sha256": "0baee49a1b90cfe60e323d07a76b57970266b4477bf421a1a7abedc4f3f7afe2"
+    },
+    {
+      "path": "firmware/main/node_http_auth.cpp",
+      "bytes": 11578,
+      "sha256": "6c30c7c3aab707348d8f2a9d222fef6d2b28c3eb2482b0121a5b17ca5814bb2f"
+    },
+    {
+      "path": "firmware/main/node_http_auth.hpp",
+      "bytes": 2601,
+      "sha256": "2bec24a34fc1116de82939371a7030a9b953f0918be56b594233a200bd4fd9ce"
+    },
+    {
+      "path": "firmware/main/node_state.cpp",
+      "bytes": 453,
+      "sha256": "4edec40cc51946ebd55ad7fb9e4b9f0854f19956ce62ee9ac848506554f75a4a"
+    },
+    {
+      "path": "firmware/main/node_state.hpp",
+      "bytes": 1081,
+      "sha256": "1fd1bda665ad9fa32588d95f264e5358912127129aede0db9e1815252956c0b9"
+    },
+    {
+      "path": "firmware/main/panel_controls.inc",
+      "bytes": 16093,
+      "sha256": "36188105fd7cb2d8a2685a0bd5fdbd0a41f6367243fc7b87621a0b4d0e3149d0"
+    },
+    {
+      "path": "firmware/main/panel_keys.hpp",
+      "bytes": 1514,
+      "sha256": "bd475b1a0b0fb9713a592c8f4184327b79181789ed85601b907d6feea6d5e10e"
+    },
+    {
+      "path": "firmware/main/render_runtime.cpp",
+      "bytes": 22351,
+      "sha256": "9e91c0fb37d79f66fc059cec9887794cbb868f4425eead415bf1ad2b2c657b2c"
+    },
+    {
+      "path": "firmware/main/render_runtime.hpp",
+      "bytes": 1433,
+      "sha256": "d3de9a7ba85e572e4aa88d5a7fd2fe039ee4bfe75d66045a40c7fe9c3024d44d"
+    },
+    {
+      "path": "firmware/main/rig_store.cpp",
+      "bytes": 30727,
+      "sha256": "32f275a588bcf001e3fa1a6c0539df53b5b242a5e0809e26e62a767826465fd0"
+    },
+    {
+      "path": "firmware/main/rig_store.hpp",
+      "bytes": 1247,
+      "sha256": "ee47036cec66af2b19f168a96f782b9d421ce3b4e84a14c7f42a1da996d63d1c"
+    },
+    {
+      "path": "firmware/main/runtime_package.cpp",
+      "bytes": 25434,
+      "sha256": "de783744c7061965b0da34348986aba21a672d4774dcda630bccab86a02a9963"
+    },
+    {
+      "path": "firmware/main/runtime_package.hpp",
+      "bytes": 733,
+      "sha256": "d60e5c987174eabaafa3cb486c229c1814099a36e5e4e901b298900f32b24b27"
+    },
+    {
+      "path": "firmware/main/sync_protocol.cpp",
+      "bytes": 15419,
+      "sha256": "328cd03f4799f07bd5ce7a5e55b4904d176219b4fc5f812de4b810a97b9e296c"
+    },
+    {
+      "path": "firmware/main/sync_protocol.hpp",
+      "bytes": 1898,
+      "sha256": "652aaffc6b66c8aff41270671547ce158482b0292abaf634d3bca914867b95ab"
+    },
+    {
+      "path": "firmware/main/sync_runtime.cpp",
+      "bytes": 142276,
+      "sha256": "afb30744bf27776b54c8d1f830b040a44412223867ef08057216a392bbb5298c"
+    },
+    {
+      "path": "firmware/main/sync_runtime.hpp",
+      "bytes": 2878,
+      "sha256": "9122d0f2aba127af478735bb870a635f03c8e9aaa1eeaabceefccb94eee627fc"
+    },
+    {
+      "path": "firmware/main/topology.cpp",
+      "bytes": 31977,
+      "sha256": "b5b2f841b2fe0d5b275e9defe50aeab74b336e1410163748c485a2af1a5b04f6"
+    },
+    {
+      "path": "firmware/main/topology.hpp",
+      "bytes": 1132,
+      "sha256": "c440f9d8ad4184a2f5a1c3808473c3d941c0e335301f171ba99251fc72490095"
+    },
+    {
+      "path": "firmware/main/usb_setup.cpp",
+      "bytes": 11843,
+      "sha256": "c6e17e104107e6af8f38f414e7c756f4f902f33a8215a42e28a68d5b8311141b"
+    },
+    {
+      "path": "firmware/main/usb_setup.hpp",
+      "bytes": 98,
+      "sha256": "7c50a6f9e0e174e23fe925afaea64365150895afcdfdb812c6d0502a9f1ea074"
+    },
+    {
+      "path": "firmware/main/web_api.cpp",
+      "bytes": 133614,
+      "sha256": "1e20b0c87c7ce716a4837aeedec31236ea13c26365f2078a1d0d8705fd855b87"
+    },
+    {
+      "path": "firmware/main/web_api.hpp",
+      "bytes": 497,
+      "sha256": "e5a618abe4a2d7f643b9c8826dbf08b05348bc14095153b09f74f3f6514b0e4a"
+    },
+    {
+      "path": "firmware/partitions.csv",
+      "bytes": 565,
+      "sha256": "bd08a58dd643fa80529e01d633a4b2d9ce97aba06c8548f29879d72eb063baa3"
+    },
+    {
+      "path": "firmware/sdkconfig.defaults",
+      "bytes": 699,
+      "sha256": "30d166dba6d3cf4ef3b3ffc42f175373b8f5a124d31766f2644caeb0b4e1777f"
+    },
+    {
+      "path": "firmware/www/index.html",
+      "bytes": 2020,
+      "sha256": "ca1fc534d578db10816b46318ce5b823923c7eaa6cb7f9a672c3b7b0b944923f"
+    },
+    {
+      "path": "firmware/www/login.mjs",
+      "bytes": 4386,
+      "sha256": "07727dfdc93902161726effaebf9237c1e49bd4f4781035d45da4a8fd96cf054"
+    },
+    {
+      "path": "firmware/www/portal.css",
+      "bytes": 1320,
+      "sha256": "606ca9b19f450a32aed662127e630fe1cedbb6574a48a55e1711b3cafb8045d2"
+    },
+    {
+      "path": "hardware/printable/README.md",
+      "bytes": 3743,
+      "sha256": "22200ca2a9224eace357eb5e012a7e1a8c9889b7552b12aae3f792c86097a9a1"
+    },
+    {
+      "path": "hardware/printable/generate.py",
+      "bytes": 5295,
+      "sha256": "7b0a23e47a7aa00f8ee50bef333e7206d2eeee6a3e78bf6b79887f212fb9af34"
+    },
+    {
+      "path": "hardware/printable/params.json",
+      "bytes": 466,
+      "sha256": "10b136f999730968bdbdca21d8de86658d87e3eb605974a01bbcffb17ed31268"
+    },
+    {
+      "path": "hardware/printable/preview.svg",
+      "bytes": 35552,
+      "sha256": "830113a638317abe2d8d49552b1f625ef964adaa75a103d0c8ac812f384ec41a"
+    },
+    {
+      "path": "hardware/printable/stl-draft/board-spacer-DRAFT.stl",
+      "bytes": 38484,
+      "sha256": "e4efc14a5bd5c19188231b57bbec2ca4d9093a8ffa8914a72e524a80c3376d15"
+    },
+    {
+      "path": "hardware/printable/stl-draft/carrier-left-DRAFT.stl",
+      "bytes": 156884,
+      "sha256": "d5afffa142b7bc0bc7cf4bd7e3644da6ff451734ce9bfd7ffcad6a744871b23c"
+    },
+    {
+      "path": "hardware/printable/stl-draft/carrier-right-DRAFT.stl",
+      "bytes": 240484,
+      "sha256": "5850739e9c1dfcb8b8af581c5b684039413238899e849024eebf626b7f3df86a"
+    },
+    {
+      "path": "hardware/printable/stl-draft/panel-link-DRAFT.stl",
+      "bytes": 58684,
+      "sha256": "cbfcc539f07b7561cda6f6cc78b4d70e9b1f024da1f6143727c8c1686b61a25d"
+    },
+    {
+      "path": "hardware/printable/stl-draft/panel-spacer-DRAFT.stl",
+      "bytes": 38484,
+      "sha256": "fe8024e30fa4404b3db9b7c850eeb83ac6c2fc38165714ce2aa012815c5f194c"
+    },
+    {
+      "path": "hardware/printable/stl-draft/split-splice-DRAFT.stl",
+      "bytes": 58684,
+      "sha256": "9290d6277c5834ad1bd9cfc63ff817773e0ba8609588fad693bdd2f0e98a7307"
+    },
+    {
+      "path": "hardware/printable/stl-draft/verification.json",
+      "bytes": 1219,
+      "sha256": "85d4c14bde9e5e28a16f9d37ed90fffdce86a439afa437e8a0e08e72da30fc83"
+    },
+    {
+      "path": "packages/formats/browser.mjs",
+      "bytes": 4192,
+      "sha256": "3b1f1f9c34af9b5871e92910d680916142290dcbf2321f1c2c996e4e7dfeb789"
+    },
+    {
+      "path": "packages/formats/crypto.mjs",
+      "bytes": 4327,
+      "sha256": "b972476c5a60571db5fed76a412dd0af4796d3c6c66b07022d694490347f895c"
+    },
+    {
+      "path": "packages/formats/index.mjs",
+      "bytes": 12539,
+      "sha256": "2e6520fc13aa96f95a15c8d41bf231d4cc571259ab97cdd11dc3840e917937cb"
+    },
+    {
+      "path": "packages/formats/zip.mjs",
+      "bytes": 2692,
+      "sha256": "abfc51c6e1afcdfd19cdcc0da31ae2b31e25929fe05d1d522612019194312516"
+    },
+    {
+      "path": "packages/render-core/index.mjs",
+      "bytes": 1632,
+      "sha256": "9cf5aceda5f16b46786a280b78a0ce1d7d9cbe4bf41a6111a1de625731f5be00"
+    },
+    {
+      "path": "schemas/README.md",
+      "bytes": 1182,
+      "sha256": "27ee9b1b42cae0160e3afad7b021d3b19d18c2469a1ef0ee769b83d62daf6c68"
+    },
+    {
+      "path": "schemas/command.schema.json",
+      "bytes": 8865,
+      "sha256": "c77d0996afcb693366e7b301d8b133b08da1d9544239d04a47f5fe20c3138054"
+    },
+    {
+      "path": "schemas/project.schema.json",
+      "bytes": 27563,
+      "sha256": "dc3518c8181e68acd208b31401594009768c881a6c98a8a8f5a66e50abe52767"
+    },
+    {
+      "path": "schemas/rig.schema.json",
+      "bytes": 3252,
+      "sha256": "fb90b7b9527ed54b3c6882c2f87a2f8f3a4d1b60a72578a271ded5954a9282ff"
+    },
+    {
+      "path": "schemas/runtime.schema.json",
+      "bytes": 20992,
+      "sha256": "25dfa8e19b81f07a56a916eb9b854c01dd5667c5f0c32e6df95d4ecb6c63b641"
+    },
+    {
+      "path": "schemas/state.schema.json",
+      "bytes": 3846,
+      "sha256": "e298119dea681ed3863cd463fed40478f56abfeb72902302dcf3be4b08aa7f9a"
+    },
+    {
+      "path": "start-editor.bat",
+      "bytes": 777,
+      "sha256": "981e7c9dc2e8801dce635087af0199010de467899b67ae13a11bea2515c5c9e5"
+    },
+    {
+      "path": "tests/browser/editor.test.mjs",
+      "bytes": 26898,
+      "sha256": "6f22aaf2283bbb23c7a62b836318537160c4ddb03da0d1e88e78799960ba0df1"
+    },
+    {
+      "path": "tests/browser/formats.test.mjs",
+      "bytes": 2964,
+      "sha256": "5004ed77daff751a107bf3964409bb17e063c6d96c6a168072c24409dcb2a9c6"
+    },
+    {
+      "path": "tests/browser/harness.mjs",
+      "bytes": 1109,
+      "sha256": "f04683a9f1c5de1075b9dcd50b4c2c58dbf5cb405a79e5eb94df969638bc7d27"
+    },
+    {
+      "path": "tests/browser/index.html",
+      "bytes": 383,
+      "sha256": "a134b578d0422d18c4546b1f2b4cf31c63f8085f90f4bf960668b9ac3f530eee"
+    },
+    {
+      "path": "tests/browser/render.test.mjs",
+      "bytes": 3832,
+      "sha256": "49a42271c010eff1c6c5e147500864275b1ef619f9b18423883cace1b8aa3914"
+    },
+    {
+      "path": "tests/browser/video-fixture.webm",
+      "bytes": 769,
+      "sha256": "82dc53ba8aa6592b82a4cea34c028808e9e76320c1a96169624cdc3301c4ce99"
+    },
+    {
+      "path": "tests/browser/zip.test.mjs",
+      "bytes": 391,
+      "sha256": "e3d4801e75b849b879c14f9b2451b094a92a8fe283f3b13fb1cd0af057218e89"
+    },
+    {
+      "path": "tests/test_dev_server.py",
+      "bytes": 12092,
+      "sha256": "28aa4b632ad73d3660d5d0fe6168a027c0dfc969761cc7bf986f50770119ae51"
+    },
+    {
+      "path": "tests/test_provision.py",
+      "bytes": 9894,
+      "sha256": "fd413c1e4214a422ca6215a69f40431304736eb0ca42dd7c06c7c6572b456208"
+    },
+    {
+      "path": "tests/test_publication.py",
+      "bytes": 4176,
+      "sha256": "281a82cfb0b1eb93f0db8adcae523248fdd975b7b05f8091e7e03f1e2448d85a"
+    },
+    {
+      "path": "tools/README.md",
+      "bytes": 1716,
+      "sha256": "9425343f79b666b703253a9712076aef1d80623c2a8ef4a3abf7c278c3ca8da5"
+    },
+    {
+      "path": "tools/browser_cdp.py",
+      "bytes": 2801,
+      "sha256": "0f357cc1ed8ed8dd04042c147be3e200221d6e219ed7d814d63a270a047f5d4d"
+    },
+    {
+      "path": "tools/build_spec.py",
+      "bytes": 2070,
+      "sha256": "546a8144d7c44359f01e1b64dd6deafe42633989ca4d8afc1c892cd2e24793cb"
+    },
+    {
+      "path": "tools/check_publication.py",
+      "bytes": 4748,
+      "sha256": "a62e683a45ff6cdc0ff0114c38d3274c9500c845ebe6b46cbb70ed1deef4396d"
+    },
+    {
+      "path": "tools/dev_server.py",
+      "bytes": 25778,
+      "sha256": "639cf6e7ec50145a5da3e968ba420a279de95c2f101bbf0d141f22d3b48a9c1c"
+    },
+    {
+      "path": "tools/export_public.py",
+      "bytes": 1996,
+      "sha256": "3ae8af6c6a195e36e48b5f8ff3483c7d8e205b8655716e9dbd061e5c9a496520"
+    },
+    {
+      "path": "tools/lpk.py",
+      "bytes": 3356,
+      "sha256": "a1ad57ec2c1512a3c49d31ac7c48f3967078559464c18795d1c9fef6798bd454"
+    },
+    {
+      "path": "tools/provision.py",
+      "bytes": 24711,
+      "sha256": "9c1443191634585191400fdd629d5494011984003bfd609406fec15345d34ecf"
+    },
+    {
+      "path": "tools/requirements-hardware.txt",
+      "bytes": 91,
+      "sha256": "00ee0729f75a1afd681c4e97587829031e82a05904ba01b4dcfcdbee8a99e8cf"
+    },
+    {
+      "path": "tools/test_browser.py",
+      "bytes": 3682,
+      "sha256": "e4d9719537ce4850cacc235c74215655da3e372704db1c0b993f3a9ed2814079"
+    },
+    {
+      "path": "tools/validate_examples.py",
+      "bytes": 758,
+      "sha256": "9f4af259f4c07771df5b6b0c8c4626a18e724ae88ab99392b5ed91470a27a2eb"
+    }
+  ]
+}
