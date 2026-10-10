@@ -21,6 +21,27 @@ def find_browser():
     return next((str(p) for p in candidates if p and Path(p).is_file()), None)
 
 
+def wait_for_browser_port(port_file, process, timeout=15):
+    deadline = time.monotonic() + timeout
+    last_error = None
+    while True:
+        returncode = process.poll()
+        if returncode is not None:
+            raise RuntimeError(f'Browser exited during startup (exit code {returncode})') from last_error
+        try:
+            # Chromium may create the file before finishing its write. On
+            # Windows the writer can also temporarily deny read access.
+            port = int(port_file.read_text(encoding='utf-8').splitlines()[0])
+            if not 1 <= port <= 65535:
+                raise ValueError('Invalid browser debugging port')
+            return port
+        except (OSError, ValueError, IndexError) as error:
+            last_error = error
+        if time.monotonic() >= deadline:
+            raise RuntimeError('Timed out waiting for browser debugging port') from last_error
+        time.sleep(.05)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--browser', help='Path to Chrome, Edge, or Chromium')
@@ -39,12 +60,7 @@ def main():
             client = None
             try:
                 port_file = Path(profile) / 'DevToolsActivePort'
-                deadline = time.monotonic() + 15
-                while not port_file.exists():
-                    if process.poll() is not None or time.monotonic() > deadline:
-                        raise RuntimeError('Browser startup failed')
-                    time.sleep(.05)
-                port = int(port_file.read_text().splitlines()[0])
+                port = wait_for_browser_port(port_file, process)
                 with urlopen(f'http://127.0.0.1:{port}/json/list') as response:
                     pages = json.load(response)
                 client = BrowserSocket(next(p['webSocketDebuggerUrl'] for p in pages if p['type'] == 'page'))
